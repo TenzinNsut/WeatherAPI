@@ -34,7 +34,6 @@ app.post('/', function (req, res) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=c1d79bc81aa93ac69c22b48162dd2043&units=${unit}`;
 
 
-
     https.get(url, function (response) {
         response.on("data", function (data){
             const weatherData = JSON.parse(data);
