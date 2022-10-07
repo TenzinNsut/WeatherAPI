@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+
+    <style>
+        
+        body{
+            background-color: #282828;
+         
+        }
+        h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3.8rem;
+            color: white;
+            /* text-shadow: 1px 1px 2px #B8338E; */
+        }
+        #container form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #B8338E;
+            margin: 0px 39%;
+            padding: 30px 0px;
+            box-shadow: 10px 20px 20px #C3C3C3;
+            border-radius: 20px;
+        }
+        form input{
+            padding: 0.625rem 1.5625rem;
+            margin: 0px 9.375rem;
+            border-radius: 0.9375rem;
+            text-align: center;
+        }
+        @media (max-width:950px) {
+            #container form{
+                margin: 0px 20px;
+            }
+            
+        }
+        form label{
+            color: #282828;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+     <h1>Weather API</h1>
+
+     <div id="container">
+     <form action="/" method="post">
+        <label for="city">City</label>
+        <input id="city" type="text" name="city" placeholder="City Name">
+        <label for="state">State Code</label>
+        <input id="state" type="text" name="state" placeholder="State Code">
+        <label for="country">Country Code</label>
+        <input id="country" type="text" name="country" placeholder="Country Code">
+        <select name="unit">
+            <option value="metric">Celsius</option>
+            <option value="imperial">Fahrenheit</option>
+        </select>
+
+        <button type="submit">submit</button>
+     </form>
+    </div>
+    
+</body>
+</html>
