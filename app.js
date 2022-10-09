@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // to get response form external server
 const https = require('https');
+const PORT = require('port');
 
 const app = express();
 
@@ -64,9 +65,9 @@ app.post('/', function (req, res) {
 
 
 
-const PORT = process.env.PORT || 8000
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}}`);
+ const port = process.env.PORT || 8000
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 })
 
 
