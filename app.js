@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // to get response form external server
 const https = require('https');
-const PORT = require('port');
 
 const app = express();
 
